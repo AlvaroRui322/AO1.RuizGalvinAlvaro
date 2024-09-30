@@ -1,11 +1,11 @@
-let numero;
+let digit;
 
 do {
-    numero = prompt("Introduce un número : ");
-    if (isNaN(numero) || numero === "") {
+    digit = prompt("Introduce un número : ");
+    if (isNaN(digit) || digit.trim() === " ") {
         alert("Error: Introduce un número válido.");
     }
-} while (isNaN(numero) || numero === "");
+} while (isNaN(digit) || digit === "");
 
-numero = Number(numero);
-alert(`Has introducido el numero ${numero}`);
+digit = Number(digit);
+alert(`Has introducido el digito ${digit}`);
